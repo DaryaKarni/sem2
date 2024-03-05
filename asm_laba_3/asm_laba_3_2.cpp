@@ -29,10 +29,7 @@ int main() {
             found :
         mov ecx, x
             mov[esi][edx * 4], ecx
-
-
             mov ecx, y
-
             mov[edi][edx * 4], ecx
             inc edx
             cmp x, 25
