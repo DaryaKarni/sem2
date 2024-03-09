@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 //дробь задаётся целым числителем и натуральным знаменателем. Сократить её
 int main(){
-    int num = 0;
+    int num = -21;
     unsigned int denom = 3;
     int nod, flag = 0;
 
