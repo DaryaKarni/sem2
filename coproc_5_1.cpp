@@ -11,7 +11,7 @@ int main() {
 	float sum = 0;
 	float onechg = -1;
 	float twelve = 12;
-	float pi = 0;
+	float mypi = 0;
 	float trash;
 	
 	_asm{
@@ -75,10 +75,10 @@ int main() {
 	        fcomp
 
 		fldpi
-		fstp pi
+		fstp mypi
 	}
 	std::cout << std::fixed;
-	std::cout << std::setprecision(20) << pi << " - real pi" << "\n";
+	std::cout << std::setprecision(20) << mypi << " - real pi" << "\n";
 	std::cout << std::fixed;
 	std::cout << std::setprecision(5) << res << "\n";
 	std::cout << std::setprecision(7) << res << "\n";
