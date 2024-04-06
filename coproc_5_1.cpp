@@ -13,13 +13,10 @@ int main() {
 	float twelve = 12;
 	float pi = 0;
 	float trash;
+	
 	_asm{
+		
 	mov ecx, 1500
-
-//	fld minusone
-///	fld onechg
-//	fadd
-//	fstp onechg//-1
 	sumloop:
 		fld k
 		fld k
@@ -37,11 +34,11 @@ int main() {
 	
 
 		fld onechg
-        fld fract
+     	        fld fract
 		fmul
-		fstp fract//prettier
+		fstp fract
 
-		fld fract//
+		fld fract
 		fld sum
 		fadd 
 		fstp sum
@@ -60,12 +57,12 @@ int main() {
 		fadd
 		fstp k
 		
-		loop sumloop
+	loop sumloop
 
 		fld twelve
 		fld sum
 		fmul
-	    fsqrt
+	        fsqrt
 		fstp sum
 
 		fld res
@@ -75,7 +72,7 @@ int main() {
 		
 		fld res
 		fldpi
-	    fcomp
+	        fcomp
 
 		fldpi
 		fstp pi
