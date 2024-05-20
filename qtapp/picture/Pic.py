@@ -4,12 +4,6 @@ from PyQt6.QtCore import Qt, QSize
 
 import sys
 
-"""Temporary option"""
-"""app = QApplication(sys.argv)
-wnd = QMainWindow()
-centralWidget = QWidget(wnd)
-wnd.setCentralWidget(centralWidget)"""
-
 class Image(QWidget):
     def __init__(self):
         super().__init__()
